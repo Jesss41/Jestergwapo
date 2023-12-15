@@ -1,0 +1,199 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+
+    --blue-color :#00d3f8;
+
+    --background-color :#242424;
+}
+body{
+
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+    min-height: 90vh;
+    overflow: hidden;
+  
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+header nav{
+    margin-right: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header nav a::before{
+    content: "";
+    width: 0px;
+    height: 2.5px;
+    position: absolute;
+    bottom: -5px;
+    background-color: var(--blue-color);
+    transition: .3s;
+}
+header nav a:hover::before{
+    width: 50px;
+}
+.button{
+    color: black;
+    height: 70px;
+    background-color: aqua;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.img-box{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img{
+    border: 5px solid var(--blue-color);
+    border-radius: 45%;
+    box-shadow: 6px 6px 30px #eee;
+    background-color: #ccc;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+.text-box{
+    width: 50%;
+    margin: 20px 0px 0px 80px;
+    text-align: start;
+    position: relative;
+    color: black;
+}
+  .text-box h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.text-box .icon-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+.text-box .icon-box i{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.text-box .icon-box i:hover{
+    background-color: var(--blue-color);
+    color: #fff;
+}
+button{
+    position: relative;
+    width: 150px;
+    height: 20px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+.Gwapo{
+    margin-right: 120px;
+    color: black;
+    height: 70px;
+    background: aqua;
+    border: none ;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.Gwapo:hover{
+   color: var(--blue-color);
+   background-color: #524f4f;
+   border: 2px solid var(--blue-color);
+   transition: .5s;
+}
+.text-box .downloadBtn{
+    margin-right: 15px;
+    color: black;
+}
+.text-box button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    transition: .5s;
+    z-index: -1;
+}
+
+
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    z-index: -1; 
+    background: linear-gradient(45deg, #3498db, red, black, skyblue);
+    background-size: 500% 500%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1{
+  color: aqua;
+}
+
+p{
+  color: white;
+  font-weight: bold;
+}
+
+ol{
+  color: white;
+  
+}
+
+a{
+  color: white;
+  
+}
